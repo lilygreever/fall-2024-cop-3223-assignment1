@@ -1,6 +1,20 @@
+//********************************************************
+// fracturing.c
+// Author: Lily Greever
+// Date: 9/8/24
+// Class: COP 3223, Professor Parra
+// Purpose: The purpose of this program is to use multiple
+// internal functions so we can practice "fracturing" our code.
+// Input: x1,x2,y1,y2 (Points on a circle)
+// Output: Points, Distance, Perimeter, Area, Width, Height
+// //********************************************************
 #include<stdio.h>
 #include<math.h>
 #define pi 3.14159
+
+//I created a helper function that gets the input from the user, prints the points entered,
+//and calculates distance so that the print statement in the calculateDistance function
+//is not repeated over and over
 
 double distanceFormula() {
     double x1;
@@ -21,6 +35,9 @@ double distanceFormula() {
     
 }
 
+//This function calls the helper function I created to caluculate the distance
+//and print it for the user
+
 double calculateDistance() {
     double x1;
     double x2;
@@ -32,6 +49,8 @@ double calculateDistance() {
 
     return distance;
 }
+
+//This function calculates the perimeter and prints it for the user
 
 double calculatePerimeter() {
     double x1;
@@ -48,6 +67,8 @@ double calculatePerimeter() {
     
 }
 
+//This function calculates the area and prints it for the user
+
 double calculateArea() {
     double x1;
     double x2;
@@ -62,6 +83,8 @@ double calculateArea() {
     return difficultyArea;
     
 }
+
+//This function calculates the width and prints it for the user
 
 double calculateWidth() {
     double x1;
@@ -78,6 +101,8 @@ double calculateWidth() {
 
  }
 
+ //This function calculates the height and prints it for the user
+
 
 double calculateHeight() {
     double x1;
@@ -93,6 +118,8 @@ double calculateHeight() {
     return difficultyHeight;
 
 }
+
+//main calls the needed functions to complete the program
 
 int main(int argc, char **argv) {
 
